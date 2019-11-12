@@ -3,7 +3,7 @@ services:
   mysql-singleton:
     image: mysql:8.0
     container_name: mysql-singleton
-    entrypoint:
+    environment:
       - MYSQL_ROOT_PASSWORD=123456
     volumes:
       - ./data:/var/lib/mysql
