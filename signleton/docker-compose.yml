@@ -10,8 +10,8 @@ services:
     ports:
       - 3306:3306
     networks:
-      - docker-net
+      - local-net
 
 networks:
-  docker-net:
+  local-net:
     external: true
